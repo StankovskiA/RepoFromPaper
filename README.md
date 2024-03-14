@@ -1,20 +1,49 @@
-# Linking papers with their corresponding tools
+# RepoFromPaper
 
-## Overview
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-The Research Paper Linkage Project is a research initiative focused on developing a methodology for the efficient extraction and linkage of GitHub repositories and tools mentioned in academic research papers. The primary objective of this project is to create a robust pipeline for the automatic detection, analysis, and, where relevant, linking of these repositories and tools to their respective research papers. By achieving this, we aim to streamline the process of accessing and referencing the code and tools associated with academic work.
+## Description
 
-## Project Goals
+This package is a tool to automatically detect and extract proposed repository links from academic papers. It uses a combination of natural language processing and heuristics to identify and extract the repository links mentioned in a proposal manner from a paper. The tool is designed to be used by researchers and developers who want to quickly find the code associated with a paper.
 
-- Develop an efficient methodology for extracting links to GitHub repositories and tools from research papers.
-- Implement a pipeline for the automatic detection of URLs, analysis, and linking to the referenced research papers.
-- Address challenges such as accurate link extraction using PDF-to-Text tools, differentiation between proposed, reused, and mentioned tools, and recognition of various expressions used to refer to tools and repositories, including the identification and linking of synonyms.
+## Table of Contents
 
-## Getting Started
+- [RepoFromPaper](#repofrompaper)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
-To get started with the Research Paper Linkage Project, follow these steps:
+## Installation
 
-1. Clone the repository to your local machine:
+The package has only three dependencies which are specified in the setup.py file. To install the package, you can use the following command:
 
-   ```bash
-   git clone https://github.com/stankovskia/linking_papers.git
+```pip install .```
+
+## Usage
+
+The usage of the package is very simple as it only has one main function. The function takes a string as input and returns a list of best matched sentences and the repository link if found else an empty string. Here is an example of how to use the package. 
+
+The name of the function is `extract_repo_links_from_pdf` and it takes the local path to the PDF as input. Here is an example of how to use the package.
+
+```
+from RSEF.repofrompaper.rfp.main import extract_repo_links_from_pdf
+
+pdf_path = "path/to/pdf"
+repo_links = extract_repo_links_from_pdf(pdf_path)
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. If you have any questions, feel free to contact us.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at [a.stankovski@alumnos.upm.es](mailto:a.stankovski@alumnos.upm.es).
