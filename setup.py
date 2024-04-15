@@ -9,7 +9,10 @@ setup(
         'torch==2.2.1',
         'tika==2.6.0',
     ],
+    author='Aleksandar Stankovski',
+    author_email='a.stankovski@alumnos.upm.es',
     description='Ths package is used to extract the repository link from a pdf file. It uses a model to extract the top sentences from the pdf and then searches for the link in the footnotes, references and sentences.',
+    url='https://github.com/SoftwareUnderstanding/RSEF',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers/Science/Research',

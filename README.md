@@ -15,6 +15,7 @@ This package is a tool to automatically detect and extract proposed repository l
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [License](#license)
+  - [Contact](#contact)
 
 ## Installation
 
@@ -42,3 +43,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. If you hav
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at [a.stankovski@alumnos.upm.es](mailto:a.stankovski@alumnos.upm.es).
