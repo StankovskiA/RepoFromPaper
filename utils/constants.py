@@ -6,7 +6,7 @@ REPO_REGEXES = [GITHUB_REGEX, GITLAB_REGEX]
 
 # Paths
 CORPUS_PATH = '../../Corpus/Test/'
-MODEL_PATH = 'hidden_for_anonymity'
+MODEL_PATH = 'oeg/RoBERTa-Repository-Proposal'
 TOKENIZER_PATH = 'roberta-base'
 
 # Limits
